@@ -53,10 +53,10 @@ setup(
     packages=['oarepo_health_check'],
     entry_points={
         'invenio_base.apps': [
-            'oarepo_health_check = health_check:OARepoHealthCheck'
+            'oarepo_health_check = oarepo_health_check:OARepoHealthCheck'
         ],
         'invenio_base.api_apps': [
-            'oarepo_health_check = health_check:OARepoHealthCheck'
+            'oarepo_health_check = oarepo_health_check:OARepoHealthCheck'
         ]
     },
     include_package_data=True,
